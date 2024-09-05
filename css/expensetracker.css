@@ -112,7 +112,7 @@ nav #downnav ul a:hover::after {
 
 #hero {
     height: calc(100vh - 117px);
-    background: url('/assets/—Pngtree—blue\ business\ finance\ earning\ banner_1001181.jpg');
+    background: url('./assets/—Pngtree—blue\ business\ finance\ earning\ banner_1001181.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -375,7 +375,7 @@ nav #downnav ul a:hover::after {
     margin-top: 50px;
     background-color: aliceblue;
     padding-top: 10px;
-    background-image: url(/assets/Money-Blue-Backgrounds.jpg);
+    background-image: url('https://www.freepptbackgrounds.net/wp-content/uploads/2019/04/Money-Blue-Backgrounds.jpg');
     background-position: center;
     background-size: cover;
 }

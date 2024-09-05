@@ -73,7 +73,7 @@ nav #uppernav a:hover{
     background-color: aliceblue;
     padding-top: 30px;
     position: relative;
-    background-image: url(/assets/Elegant-Blue-Presentation-Template.jpg);
+    background-image: url('https://www.freepptbackgrounds.net/wp-content/uploads/2019/04/Elegant-Blue-Presentation-Template.jpg');
     background-position: center;
     background-size: cover;
 }

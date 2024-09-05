@@ -166,6 +166,8 @@ function handleExpenseSubmit(e) {
     const userExpenseArray = getUserExpenses();
     userExpenseArray.push(newExpense);
     localStorage.setItem('userExpenseArray', JSON.stringify(userExpenseArray));
+    window.location.reload();
+
 
     displayUserExpenses();
     displayVisuals();
