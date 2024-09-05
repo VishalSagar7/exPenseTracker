@@ -21,9 +21,9 @@ message a tag color #ef7036;
 body{
     height: 100%;
     background: white;
-    background-image: url('https://www.freepptbackgrounds.net/wp-content/uploads/2019/03/Blue-Presentation-Slides.jpg');
+    /* background-image: url('https://www.freepptbackgrounds.net/wp-content/uploads/2019/03/Blue-Presentation-Slides.jpg'); */
     /* background-position: center; */
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .login-page{
@@ -37,7 +37,11 @@ body{
     0 5px 5px 0 rgb(0, 0, 0, 0.24) ;
     background: #ffff;
     border-radius: 5px;
+    background-image: url('https://www.freepptbackgrounds.net/wp-content/uploads/2019/03/Blue-Presentation-Slides.jpg'); 
+    background-position: center;
+    background-size: cover;
 }
+
 
 .login-page h2{
     text-align: center;
