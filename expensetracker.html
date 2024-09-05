@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/expensetracker.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+</head>
+<body>
+    <a href="chatBot.html">
+        <button id="talk-to-chat-bot-btn"><img src="assets/live-chat.png" alt="chat-support"></button>
+    </a>
+    <a href="#uppernav">
+        <div id="back-to-top">^</div>
+    </a>
+    <nav>
+        <div id="uppernav">
+            <!-- <h1>Daily Finance Management</h1> -->
+            <div id="links-div">
+                <a href="">Home</a>
+                <a href="chatBot.html">AI Financial advisor</a>
+                <a href="stickynotes.html">Make notes</a>
+            </div>
+            <a href="index.html"><button class="common-btn">Logout</button></a>
+        </div>
+        <div id="downnav">
+            <ul>
+                
+                    <a href="#expense-calculator">Expense tracker</a>
+                    <a href="#visuals-div">Data visualization</a>
+                    <a href="#api-integration">AI financial advisor</a>
+                    <a href="#tax-section">Taxes calculator</a>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div id="hero">
+        <div id="tagline">
+            <h2>
+                Track, Visualize, and Optimize Your Finances
+            </h2>
+            <p>"Our financial tracker empowers you to effortlessly monitor your expenses, visualize spending patterns, and calculate taxes—all in one place. Take control of your finances with insightful analytics and personalized tax calculations that help you optimize your budget and achieve your financial goals."</p>
+            <button class="common-btn"><a href="#expense-calculator">Explore</a></button>
+        </div>
+
+    
+
+    </div>
+
+    <div id="expense-calculator">
+        <div id="expense-calculator-child">
+            <h1>Track your expenses💰</h1>
+
+            <form id="expense-tracker-form">
+
+                <input 
+                name="description"
+                id="item-description"
+                placeholder="Description"
+                type="text"
+                >
+
+                <input 
+                name="amount"
+                id="item-amount"
+                placeholder="Amount"
+                type="number"
+                >
+
+                <select name="catagory" id="item-catagory">
+                    <option value="Groceries">Groceries</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Study">Study</option>
+                    <option value="Medical">Medical</option>
+                </select>
+
+
+
+                <button id="expense-tracker-form-btn">
+                    Submit
+                </button>
+
+
+
+            </form>
+
+            <div id="user-data">
+                <div id="user-data-text">
+                    <!-- <div id="user-item">
+                        <p>1.</p>
+                        <p>Today i bought iphone</p>
+                        <p>Entertainment</p>
+                        <p> ₹ <span>5000</span></p>
+                    </div> -->
+                </div>
+                <div id="visuals-div">
+                    <h1>Data visualization📊</h1>
+                    <canvas id="user-data-visuals">
+
+                    </canvas>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="api-integration">
+       
+        <div id="api-integration-child">
+            <h2>🤖AI financial advisor</h2>
+            <input type="number" placeholder="Enter your monthly income in rupees" id="income-input"/>
+            <button id="getinfo">
+                Get a financial advise according to my spendings
+            </button>
+
+            <img src="assets/Spinner@1x-1.0s-200px-200px.gif" alt="spinner" id="spinner">
+            <div id="user-ans-div" >
+                
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div id="tax-section">
+        <div id="tax-section-child-div">
+
+            <h2>💲Taxes calculator</h2>
+
+
+            <div id="parent-of-right-and-left-boxes">
+                <div id="tax-section-left-box">
+                    <table id="tax-table">
+                        <tr>
+                            <th>Income Slab (₹)</th>
+                            <th>Tax Rate</th>
+                        </tr>
+                        <tr>
+                            <td>Up to ₹2,50,000</td>
+                            <td>No tax</td>
+                        </tr>
+                        <tr>
+                            <td>₹2,50,001 - ₹5,00,000</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>₹5,00,001 - ₹7,50,000</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>₹7,50,001 - ₹10,00,000</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <td>₹10,00,001 - ₹12,50,000</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>₹12,50,001 - ₹15,00,000</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td>Above ₹15,00,000</td>
+                            <td>30%</td>
+                        </tr>
+                    </table>
+                </div>
+    
+                <div id="tax-section-right-box">
+                    <form action="#">
+                        <h3>Calculate your tax amount</h3>
+                        <input type="number" placeholder="Enter your annual income" id="tax-calculator-input">
+                        <button id="salaryCalculatebtn">Calculate</button>
+                        <p id="total-tax-amount"></p>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/expensetracker.js " type="module"></script>
+
+</body>
+</html>

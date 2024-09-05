@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/chatBot.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+
+</head>
+<body>
+
+    <nav>
+        <div id="uppernav">
+            <!-- <h1>Daily Finance Management</h1> -->
+            <div id="links-div">
+                <a href="expensetracker.html">Home</a>
+                <a href="chatBot.html">AI Financial advisor</a>
+                <a href="stickynotes.html">Make notes</a>
+            </div>
+            <a href="index.html"><button class="common-btn">Logout</button></a>
+        </div>
+    </nav>
+
+    <div id="chat-bot-parent-div">
+        <img src="assets/Spinner@1x-1.0s-200px-200px.gif" alt="" id="spinner">
+        <div id="chat-bot-child-div">
+
+            <!-- <p id="your-question"><span>You : </span>What is Your name?</p>
+            <p id="chatbots-ans"><span>Bot : </span>My name is chatbot how can i help you today?</p> -->
+
+        </div>
+
+        <div id="input-box">
+            <input placeholder="Enter a prompt here" id="chatbot-input">
+            <button id="chat-input-send-btn">
+                SEND
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/chatBot.js" type="module"></script>
+
+</body>
+</html>

@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* background-color: rgb(40, 162, 211); */
+}
+
+.common-btn{
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid white;
+    transition: 300ms;
+    font-weight: 500;
+    font-size: 18px;
+}
+.common-btn:hover{
+    background-color: transparent;
+    color: white;
+}
+.common-btn:hover a{
+    color: white;
+}
+.common-btn a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+nav{
+    /* height: 100px; */
+    width: 100%;
+}
+nav #uppernav{
+    height: 80px;
+    width: 100%;
+    /* background-color: rgb(16,24,38); */
+    background-color: rgb(40, 162, 211);
+    /* background-color: rgb(18, 100, 133); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+}
+nav #uppernav h1{
+    color: white;
+}
+
+#links-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    min-width: 500px;
+    
+}
+nav #uppernav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 300ms;
+}
+
+
+nav #uppernav a:hover{
+    color: rgba(0, 0, 0, 0.581);
+
+}
+nav #downnav{
+    height: 40px;
+    width: 100%;
+    /* background-color: rgb(12,154,211); */
+    background-color: rgb(16,24,38);
+    padding-inline: 50px;
+    position: relative;
+    
+}
+nav #downnav ul{
+    height: 40px;
+    /* background-color: yellow; */
+}
+nav #downnav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+nav #downnav ul a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    position: relative; /* Required for the ::after pseudo-element positioning */
+    padding-bottom: 5px; /* Add some padding to make room for the underline */
+}
+
+
+nav #downnav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Position it at the bottom of the link */
+    left: 0;
+    height: 1px;
+    width: 0; /* Start with 0 width */
+    background-color: rgb(12,154,211);
+    transition: width 0.5s ease; /* Animate width */
+}
+nav #downnav ul a:hover::after {
+    width: 100%; /* Expand to full width on hover */
+}
+
+#hero {
+    height: calc(100vh - 117px);
+    background: url('/assets/—Pngtree—blue\ business\ finance\ earning\ banner_1001181.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#hero #tagline{
+    height: 300px;
+    width: 600px;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#hero button{
+    margin-top: 20px;
+}
+#hero #tagline h2{
+    color: rgb(16,24,38);
+    font-size: 45px;
+}
+#hero #tagline p{
+    color: rgb(16,24,38);
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+
+#expense-calculator{
+    min-height: 100vh;
+    width: 100%;
+    padding-inline: 50px;
+    padding-block: 20px;
+    /* background-image: url(/assets/Elegant-Blue-Presentation-Template.jpg);
+    background-position: center; */
+    /* background-size: cover; */
+}
+#expense-calculator #expense-calculator-child{
+    padding-inline: 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: 1px 1px 5px black;
+
+}
+#expense-calculator #expense-calculator-child h1{
+    color: rgba(0, 0, 0, 0.736);
+}
+#expense-calculator #expense-calculator-child #expense-tracker-form{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2), 
+    0 5px 5px 0 rgb(0, 0, 0, 0.24) ;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+#expense-calculator #expense-calculator-child #expense-tracker-form input,select{
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgb(184, 184, 184);
+    outline: none;
+    margin-top: 15px;
+    /* border-radius: 5px; */
+    padding-left: 10px;
+    font-size: 17px;
+}
+#expense-calculator #expense-calculator-child #expense-tracker-form #item-date{
+    width: 200px;
+    height: 40px;
+}
+#expense-calculator #expense-calculator-child #expense-tracker-form input:focus{
+    border: 2px solid rgb(12,154,211);
+}
+#expense-calculator #expense-calculator-child #expense-tracker-form select:focus{
+    border: 2px solid rgb(12,154,211);
+}
+
+#expense-calculator #expense-calculator-child #expense-tracker-form #expense-tracker-form-btn{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(40, 160, 207);
+    transition: 300ms;
+    margin-top: 15px;
+    border: 1px solid rgb(12,154,211);
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+#expense-calculator #expense-calculator-child #expense-tracker-form #expense-tracker-form-btn:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.849);
+}
+
+
+
+#user-data{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    
+}
+#visuals-div{
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+    /* border: 1px solid gray; */
+    padding-block: 20px;
+
+}
+#user-data #user-data-text{
+    min-height: 300px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 20px;
+}
+#user-data #user-data-text #user-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* background-color:  rgb(197, 223, 233); */
+    background-color: aliceblue;
+    height: 35px;
+    padding-inline: 5px;
+    border-radius: 2px;
+    border-bottom: 0.5px solid rgb(185, 184, 184);
+}
+#grandTotal{
+    align-self: flex-end;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+#user-data #user-data-text #user-item p{
+    font-size: 20px;
+}
+#user-data #user-data-visuals{
+    max-height: 550px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    background-color: aliceblue;
+    /* padding-block: 20px; */
+}
+.table{
+    text-align: left;
+    font-size: 20px;
+}
+#date-info{
+    font-size: 17px;
+}
+#item-buttons{
+    margin-left: auto;
+}
+#item-buttons button{
+    background-color: rgb(12,154,211);
+    outline: none;
+    border: none;
+    color: white;
+    height: 25px;
+    width: 100px;
+    border-radius: 3px;
+}
+#item-buttons button:hover{
+    background-color: rgb(62, 186, 235);
+}
+
+
+
+#api-integration{
+    min-height: 200px;
+    width: 100%;
+    /* background-color: ; */
+    padding-inline: 50px;
+    background-color: aliceblue;
+
+
+
+}
+
+#api-integration #api-integration-child{
+    /* min-height: 100vh; */
+    width: 100%;
+    /* border: 1px solid gray; */
+    /* background-color: black; */
+    padding: 20px;
+    /* box-shadow: 0 0 20px rgb(0, 0, 0, 0.2), 
+    0 5px 5px 0 rgb(0, 0, 0, 0.24) ; */
+    position: relative;
+}
+#api-integration #api-integration-child h2{
+    /* color: rgb(16,24,38); */
+    color: rgba(0, 0, 0, 0.736);
+    font-size: 40px;
+}
+
+#getinfo{
+    margin-top: 10px;
+    background-color: rgb(62, 186, 235);
+    border-radius: 5px;
+    height: 40px;
+    /* width: 100px; */
+    border: 1px solid rgb(62, 186, 235);
+    transition: 300ms;
+    font-weight: 500;
+    font-size: 18px;
+    padding-inline: 10px;
+    color: white;
+}
+#getinfo:hover{
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.736);
+}
+
+#api-integration #api-integration-child #income-input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgb(184, 184, 184);
+    outline: none;
+    margin-top: 15px;
+    /* border-radius: 5px; */
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+#ansPara{
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.858);
+    height: auto;
+}
+#user-ans-div{
+    position: relative;
+    min-height: 100px;
+}
+#spinner{
+    height: 100px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+
+}
+
+
+/* tax section  */
+
+#tax-section{
+    height: 100vh;
+    width: 100%;
+    /* background-color: gray; */
+    padding-inline: 50px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    padding-top: 10px;
+    background-image: url(/assets/Money-Blue-Backgrounds.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#tax-section #tax-section-child-div{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid gray; */
+}
+#tax-section #tax-section-child-div h2{
+    color: white;
+    font-size: 40px;
+}
+
+#tax-table{ 
+    text-align: left;
+    padding: 20px;
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2), 
+    0 5px 5px 0 rgb(0, 0, 0, 0.24) ;
+    width: 370px;
+    height: 370px;
+    border-radius: 5px;
+}
+#tax-table tr:nth-child(even){
+    background-color: rgb(170, 205, 235);
+}
+#tax-table tr:nth-child(odd):not(:first-child) {
+    background-color: aliceblue;
+}
+#tax-tableth, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+#parent-of-right-and-left-boxes{
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+
+#tax-section-left-box{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+#tax-section-right-box{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tax-section-right-box form{
+    height: 200px;
+    width: 500px;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+#tax-section-right-box form input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgb(184, 184, 184);
+    outline: none;
+    margin-top: 10px;
+    /* border-radius: 5px; */
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+#tax-section-right-box form button{
+    background-color: rgb(62, 186, 235);
+    margin-top: 10px;
+    color: white;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+    border: 1px solid rgb(62, 186, 235);
+    transition: 300ms;
+    font-weight: 500;
+    font-size: 18px;
+}
+#tax-section-right-box form h3{
+    color: white;
+}
+
+#tax-section-right-box form button:hover{
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.736);
+}
+#tax-section-right-box form #total-tax-amount{
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#talk-to-chat-bot-btn{
+    height: 80px;
+    z-index: 10;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(62, 186, 235);
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2), 
+    0 5px 5px 0 rgb(0, 0, 0, 0.24) ;
+    transition: 400ms;
+}
+#talk-to-chat-bot-btn:hover{
+    transform: scale(1.05);
+}
+#talk-to-chat-bot-btn img{
+    height: 50px;
+
+}
+
+
+#back-to-top{
+    position: fixed;
+    top: 92%;
+    left: 96%;
+    height: 30px;
+    width: 30px;
+    background-color: brown;
+    border-radius: 50%;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    /* padding-top: 3px; */
+    padding-left: 8px;
+}
