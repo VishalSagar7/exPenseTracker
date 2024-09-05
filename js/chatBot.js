@@ -22,7 +22,7 @@ function displayOnScreen(yourQuestion, ans) {
 
     // Create HTML for the question and answer
     const yourQuestionPara = `<p id="your-question"><span>You: </span>${yourQuestion}</p>`;
-    const botAnsPara = `<p id="chatbots-ans"><span>Bot: </span>${formattedAnswer}</p>`;
+    const botAnsPara = `<p id="chatbots-ans"><span>🤖: </span>${formattedAnswer}</p>`;
 
     // Create a container for the conversation
     const box = document.createElement('div');
@@ -34,7 +34,8 @@ function displayOnScreen(yourQuestion, ans) {
     // Append the container to the main div
     mainDiv.appendChild(box);
     spinner.style.display = 'none';
-    sendMsgBtn.style.backgroundColor = 'rgb(7, 130, 179)'
+    sendMsgBtn.style.color = 'rgb(7, 130, 179)'
+    sendMsgBtn.style.backgroundColor ='white'
 
 
 }

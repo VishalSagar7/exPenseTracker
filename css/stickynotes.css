@@ -154,16 +154,16 @@ nav #downnav ul a:hover::after {
 #child-2{
     min-height: 550px;
     /* border: 1px solid black; */
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     display: flex;
     gap: 10px;
     padding: 15px;
     row-gap: 10px;
     flex-wrap: wrap;
     align-items: flex-start;
-        box-shadow: 0 0 20px rgb(0, 0, 0, 0.2), 
+        /* box-shadow: 0 0 20px rgb(0, 0, 0, 0.2), 
     0 5px 5px 0 rgb(0, 0, 0, 0.24) ;
-    border-radius: 5px;
+    border-radius: 5px; */
 }
 #child-2 h2{
     text-align: center;
