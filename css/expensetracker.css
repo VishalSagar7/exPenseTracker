@@ -112,7 +112,7 @@ nav #downnav ul a:hover::after {
 
 #hero {
     height: calc(100vh - 117px);
-    background: url('./assets/—Pngtree—blue\ business\ finance\ earning\ banner_1001181.jpg');
+    background: url('https://www.freepptbackgrounds.net/wp-content/uploads/2019/04/Business-Finance-PPT-Templates.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -131,11 +131,11 @@ nav #downnav ul a:hover::after {
     margin-top: 20px;
 }
 #hero #tagline h2{
-    color: rgb(16,24,38);
+    color: white;
     font-size: 45px;
 }
 #hero #tagline p{
-    color: rgb(16,24,38);
+    color: white;
     font-size: 20px;
     margin-top: 15px;
 }

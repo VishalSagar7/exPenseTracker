@@ -121,7 +121,7 @@ nav #downnav ul a:hover::after {
     width: 100%;
     display: flex;
     padding: 50px;
-    background-image: url(/assets/Elegant-Blue-Presentation-Template.jpg);
+    background-image: url('https://www.freepptbackgrounds.net/wp-content/uploads/2019/04/Elegant-Blue-Presentation-Template.jpg');
     background-position: center;
     background-size: cover;
 }
