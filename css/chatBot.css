@@ -170,9 +170,10 @@ nav #uppernav a:hover{
 #spinner{
     position: absolute;
     border-radius: 50%;
-    height: 50px;
+    height: 90px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: none;
+    /* background: transparent; */
 }

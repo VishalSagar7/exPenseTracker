@@ -1,4 +1,7 @@
 
+
+  
+
 const expenseTrackerBtn = document.getElementById('expense-tracker-form-btn');
 const description = document.getElementById('item-description');
 const amount = document.getElementById('item-amount');
@@ -9,7 +12,10 @@ const ctx = document.getElementById('user-data-visuals').getContext('2d');
 // Initialize the chart variable
 let myChart;
 
-
+var typed = new Typed('#taglinepara', {
+    strings: ['<p>"Our financial tracker empowers you to effortlessly monitor your expenses, visualize spending patterns, and calculate taxes—all in one place. Take control of your finances with insightful analytics and personalized tax calculations that help you optimize your budget and achieve your financial goals."</p>'],
+    typeSpeed: 30,
+  });
 
 // Function to get user expenses from localStorage
 function getUserExpenses() {
@@ -212,6 +218,7 @@ function displayAnsOnScreen(params) {
     // Create a paragraph element and set its HTML content
     const ansPara = document.createElement('p');
     ansPara.setAttribute("id", "ansPara");
+    // ansPara.setAttribute('class', 'tlt');
     userAnsDiv.innerText = ""
     ansPara.innerHTML = formattedText; // Use innerHTML for formatting
 
