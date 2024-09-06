@@ -18,7 +18,7 @@ This is an interactive Expense Tracker built with HTML, CSS, and JavaScript that
 
 ## Demo 🎥
 
-You can view a live demo of the Expense Tracker [here](#). *(Add link once deployed)*
+You can view a live demo of the Expense Tracker [https://expensetracker333.netlify.app](#). *(Add link once deployed)*
 
 ## Getting Started 🚀
 
